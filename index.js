@@ -24,7 +24,7 @@ function reactify(filename, options) {
           sourceMap: true,
           sourceFilename: filename,
           stripTypes: options['strip-types'] || options.stripTypes,
-          harmony: options.harmony || options.es6
+          harmony: true
         });
         this.queue(output);
       } catch (error) {
